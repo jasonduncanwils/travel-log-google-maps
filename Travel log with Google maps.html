@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Our travels</title>
+    <style>
+      #map {
+        height: 100%;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+      function initMap() {
+        var myStartingCenter = {lat: 39.1365, lng: -84.6808};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          	zoom: 3,
+          	center: myStartingCenter
+        });
+		
+		// ---------------------------------------------------------- 
+		// ---------------------------------------------------------- 
+		//  Travel spots
+		// ---------------------------------------------------------- 
+		var marker = new google.maps.Marker({
+            position: {lat: 29.9503513, lng: -90.0697924},
+            title: 'New Orleans in Feb 2018 at Intercontinental hotel. We took this trip '+
+            'without the kids. We ate a ton of good food at Nola, Ruby Slipper, and Cafe Du Monde. We walked around the '+
+            'French Quarter and also walked all the way over to the Garden District. We walked through Lafayette cemetery #1.',
+            map: map
+        });
+        // ---------------------------------------------------------- 
+		var marker = new google.maps.Marker({
+            position: {lat: 36.0617186, lng: -112.1099122},
+            title: 'Grand Canyon overlook at Mather Point in Feb 2017. It was a long drive from Phoenix to make it up here. '+
+            'Once we got there, though, the view from Mather Point was amazing. It made us feel small in a good way.',
+            map: map
+        });
+        // ---------------------------------------------------------- 
+        var marker = new google.maps.Marker({
+            position: {lat: 37.868768, lng: -122.2736049},
+            title: 'Many summers in Berkeley. A home away from home.',
+            map: map
+        });
+        // ---------------------------------------------------------- 
+        var marker = new google.maps.Marker({
+            position: {lat: 36.2114457, lng: -86.6966932},
+            title: 'Christmas at the Opryland hotel in Nashville many years. The hotel is so beautifully decorated at Christmas time '+
+            'and it is very nice to be able to walk all over without going outside in the middle of winter.',
+            map: map
+        });
+        // ---------------------------------------------------------- 
+        var marker = new google.maps.Marker({
+            position: {lat: 41.5449388, lng: -82.7501107},
+            title: "Stayed with extended family in Lakeside Ohio. The kids were able to walk anywhere which was awesome.",
+            map: map
+        });
+        // ---------------------------------------------------------- 
+        var marker = new google.maps.Marker({
+            position: {lat: 41.4845944, lng: -82.6833609},
+            title: 'Breakers hotel at Cedar Point many summers. The combination of spending time on the beach and going into the park '+
+            'was a great balance.',
+            map: map
+        });
+        // ---------------------------------------------------------- 
+        var marker = new google.maps.Marker({
+            position: {lat: 34.1381168, lng: -118.3533783},
+            title: 'Universal Studios in Los Angeles during summer 2016. We rode a bunch of rides but overall the vacation was a bust.',
+            map: map
+        });
+        // ---------------------------------------------------------- 
+        var marker = new google.maps.Marker({
+            position: {lat: 36.3729002, lng: -84.0401432},
+            title: 'Lake Norris many times over many summers. The water down there is so clean and clear.',
+            map: map
+        });
+        // ---------------------------------------------------------- 
+        var marker = new google.maps.Marker({
+            position: {lat: 38.699144, lng: -75.073990},
+            title: "Dewey beach a few times for summer vacation.",
+            map: map
+        });
+        // ----------------------------------------------------------
+        var marker = new google.maps.Marker({
+            position: {lat: 44.3834351, lng: -68.2118861},
+            title: "We went to stay in a cabin outside Bar Harbor, Maine for our honeymoon. "+
+            'This was an amazing 9 days of hiking, slow mornings, and roaming around a bunch. Acadia National Forest was amazing and '+
+            'some of the overlooks of the Atlantic were great too.',
+            map: map
+        });
+        // ---------------------------------------------------------- 
+        var marker = new google.maps.Marker({
+            position: {lat: 43.304146, lng: -1.976986},
+            title: "My wife went to the basque country in Spain as a teenager and stayed there for a few months.",
+            map: map
+        });
+        // ---------------------------------------------------------- 
+        var marker = new google.maps.Marker({
+            position: {lat: 27.7947236, lng: -82.77508},
+            title: "Went to visit friends when they were living in St. Pete.",
+            map: map
+        });
+        // ---------------------------------------------------------- 
+        var marker = new google.maps.Marker({
+            position: {lat: 47.6097271, lng: -122.3465811},
+            title: "Visited Seattle many times.",
+            map: map
+        });
+        // ---------------------------------------------------------- 
+        var marker = new google.maps.Marker({
+            position: {lat: 36.618264, lng: -121.9017919},
+            title: "Went to Monterey Bay in July 2015.",
+            map: map
+        });
+        // ---------------------------------------------------------- 
+        var marker = new google.maps.Marker({
+            position: {lat: 33.5481457, lng: -112.0482929},
+            title: "Stayed at the Pointe Hilton Squaw Peak Resort a few times for Oracle conferences.",
+            map: map
+        });
+        // ---------------------------------------------------------- 
+        var marker = new google.maps.Marker({
+            position: {lat: 25.7825452, lng: -80.2996706},
+            title: "A quick weekend of fun in Miami.",
+            map: map
+        });
+        // ---------------------------------------------------------- 
+        var marker = new google.maps.Marker({
+            position: {lat: 40.4398279, lng: -79.9983732},
+            title: "Went to Pittsburgh for a weekend and stayed at the Omni William Penn hotel.",
+            map: map
+        });
+        // ---------------------------------------------------------- 
+	  }
+      
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key={yourAPIkey}&callback=initMap">
+    </script>
+  </body>
+</html>
